@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合赛事推荐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .update-time {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .recommendation-list {
+            padding: 20px;
+        }
+        .match-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+        }
+        .match-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .league {
+            background-color: #3498db;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .teams {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .odds {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        .prediction {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f4fc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .confidence {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .confidence-bar {
+            flex: 1;
+            height: 6px;
+            background-color: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .confidence-fill {
+            height: 100%;
+            background-color: #27ae60;
+            border-radius: 3px;
+        }
+        .confidence-text {
+            font-size: 12px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+            color: #7f8c8d;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>综合赛事推荐</h1>
+            <div class="update-time">更新时间：2026年05月10日 23:05</div>
+        </div>
+        <div class="recommendation-list">
+            <!-- 比赛卡片示例，可复制修改 -->
+            <div class="match-card">
+                <div class="match-header">
+                    <span class="league">英超</span>
+                    <span class="odds">主胜 2.10 / 平 3.40 / 客胜 3.20</span>
+                </div>
+                <div class="teams">曼联 vs 利物浦</div>
+                <div class="prediction">
+                    <strong>推荐方向：</strong>主胜<br>
+                    <strong>分析：</strong>曼联主场状态稳定，利物浦客场防守存在隐患，结合历史交锋与盘口走势，主胜为首选方向。
+                </div>
+                <div class="confidence">
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: 85%"></div>
+                    </div>
+                    <span class="confidence-text">信心指数：85%</span>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <span class="league">西甲</span>
+                    <span class="odds">主胜 1.80 / 平 3.60 / 客胜 4.00</span>
+                </div>
+                <div class="teams">巴塞罗那 vs 皇家马德里</div>
+                <div class="prediction">
+                    <strong>推荐方向：</strong>主胜<br>
+                    <strong>分析：</strong>巴萨主场攻防表现出色，皇马近期状态起伏较大，盘口对主队支持力度充足，主胜概率较高。
+                </div>
+                <div class="confidence">
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: 90%"></div>
+                    </div>
+                    <span class="confidence-text">信心指数：90%</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            免责声明：本推荐仅供参考，不构成投注建议，理性参与，切勿沉迷。
+        </div>
+    </div>
+</body>
+</html>
