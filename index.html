@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>综合赛事推荐</title>
+    <title>赛事精选推荐</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
         }
         body {
             background-color: #f0f2f5;
@@ -24,7 +24,7 @@
             overflow: hidden;
         }
         .header {
-            background-color: #2c3e50;
+            background-color: #d32f2f; /* 红色主题 */
             color: white;
             padding: 20px;
             text-align: center;
@@ -35,7 +35,7 @@
         }
         .update-time {
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.9;
         }
         .recommendation-list {
             padding: 20px;
@@ -54,7 +54,7 @@
             margin-bottom: 10px;
         }
         .league {
-            background-color: #3498db;
+            background-color: #d32f2f; /* 红色标签 */
             color: white;
             padding: 3px 8px;
             border-radius: 4px;
@@ -63,17 +63,19 @@
         .teams {
             font-size: 16px;
             font-weight: bold;
+            color: #333;
         }
         .odds {
             font-size: 14px;
-            color: #7f8c8d;
+            color: #666;
         }
         .prediction {
             margin-top: 10px;
             padding: 10px;
-            background-color: #e8f4fc;
+            background-color: #fff3f3; /* 浅红背景 */
             border-radius: 4px;
             font-size: 14px;
+            line-height: 1.5;
         }
         .confidence {
             margin-top: 8px;
@@ -90,19 +92,19 @@
         }
         .confidence-fill {
             height: 100%;
-            background-color: #27ae60;
+            background-color: #d32f2f; /* 红色进度条 */
             border-radius: 3px;
         }
         .confidence-text {
             font-size: 12px;
-            color: #27ae60;
+            color: #d32f2f;
             font-weight: bold;
         }
         .footer {
             text-align: center;
             padding: 15px;
             font-size: 12px;
-            color: #7f8c8d;
+            color: #777;
             border-top: 1px solid #e0e0e0;
         }
     </style>
@@ -110,11 +112,11 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>综合赛事推荐</h1>
+            <h1>赛事精选推荐</h1>
             <div class="update-time">更新时间：2026年05月10日 23:05</div>
         </div>
         <div class="recommendation-list">
-            <!-- 比赛卡片示例，可复制修改 -->
+            <!-- 比赛卡片1 -->
             <div class="match-card">
                 <div class="match-header">
                     <span class="league">英超</span>
@@ -133,6 +135,7 @@
                 </div>
             </div>
 
+            <!-- 比赛卡片2 -->
             <div class="match-card">
                 <div class="match-header">
                     <span class="league">西甲</span>
